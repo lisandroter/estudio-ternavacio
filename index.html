@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#162A35">
+  <meta name="description" content="Estudio Jurídico Ternavacio y Asociados. Somos especialistas en Derecho Laboral y contamos con vasta experiencia en Derecho Sucesorio, Empresarial y Societario. Contacto en Ceres y Santa Fe.">
+  <title>Estudio Jurídico Ternavacio y Asociados | Ceres y Santa Fe</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      --navy:#162A35; --navy-2:#122530; --ink:#26333A; --gold:#B59A67;
+      --gold-light:#D4BC8C; --cream:#F0EBE1; --cream-2:#F7F4EE;
+      --white:#FFFFFF; --muted:#697176; --line:#E3DFD6; --side:clamp(22px,5vw,88px);
+      --sans:Arial,Helvetica,sans-serif; --serif:Georgia,'Times New Roman',serif;
+    }
+    *,*::before,*::after {box-sizing:border-box}
+    html {scroll-behavior:smooth;scroll-padding-top:86px}
+    body {margin:0;font-family:var(--sans);font-size:16px;line-height:1.6;color:var(--ink);background:var(--cream-2);-webkit-font-smoothing:antialiased}
+    img,svg {max-width:100%} a {color:inherit;text-decoration:none} button,input,textarea,select {font:inherit}
+    button,a,select,input,textarea { -webkit-tap-highlight-color:transparent }
+    :focus-visible {outline:3px solid #D3AC64;outline-offset:4px}
+    ::selection{background:var(--gold);color:var(--navy)}
+    .skip{position:absolute;left:14px;top:-60px;z-index:200;background:white;padding:12px 16px;color:var(--navy)}.skip:focus{top:10px}
+    .container {width:min(1240px,calc(100% - 2 * var(--side)));margin:0 auto}
+    .eyebrow {font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;line-height:1.5}
+    .eyebrow.gold {color:var(--gold)}
+    .section-number {color:var(--gold);font-family:var(--serif);font-size:.85rem;margin-right:12px}
+    .section-title{font-family:var(--serif);font-weight:400;letter-spacing:-.045em;line-height:1.11;font-size:clamp(2.45rem,4.2vw,4.6rem);margin:20px 0 24px}
+    .section-title em {font-weight:400;color:var(--gold);font-style:italic}
+    .section-p {max-width:650px;font-size:clamp(1rem,1.2vw,1.12rem);color:#59636A;line-height:1.82}
+    .btn {display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:53px;padding:15px 23px;border:1px solid transparent;border-radius:2px;letter-spacing:.01em;font-size:.84rem;font-weight:700;transition:transform .2s ease,background .2s ease,border-color .2s ease;text-align:center;cursor:pointer}
+    .btn:hover{transform:translateY(-2px)}
+    .btn svg {width:18px;height:18px;flex:0 0 18px}
+    .btn.gold {background:var(--gold);color:var(--navy-2)}.btn.gold:hover{background:var(--gold-light)}
+    .btn.outline-light {color:white;border-color:#667780;background:transparent}.btn.outline-light:hover{border-color:#E3D3AF}
+    .btn.outline-dark {color:var(--navy);border-color:#BAC3C3;background:transparent}.btn.outline-dark:hover{border-color:var(--gold)}
+    .text-link{display:inline-flex;gap:12px;align-items:center;color:var(--navy);font-weight:700;font-size:.87rem;border-bottom:1px solid var(--gold);padding-bottom:8px}
+    .text-link:hover{gap:19px}
+    .topline{height:34px;background:var(--navy-2);color:#D0D9DA;border-bottom:1px solid #ffffff13}
+    .topline .container{height:100%;display:flex;justify-content:space-between;align-items:center;gap:18px}
+    .topline small {font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
+    .topline .right{color:#B9C4C9}
+    .site-header{background:var(--navy);color:white;position:sticky;top:0;z-index:80;border-bottom:1px solid #ffffff22}
+    .site-header-inner{display:flex;align-items:center;justify-content:space-between;gap:25px;min-height:88px}
+    .brand{display:flex;align-items:center;gap:15px;flex-shrink:0}
+    .brand-mark {width:43px;height:49px;border:1px solid var(--gold);display:grid;place-items:center;position:relative;color:var(--gold);font:33px/1 var(--serif)}
+    .brand-mark::before {content:'';position:absolute;left:5px;right:5px;top:5px;bottom:5px;border:1px solid #b59a6744;pointer-events:none}
+    .brand-text {display:flex;flex-direction:column;line-height:1.16;gap:4px;text-transform:uppercase;letter-spacing:.09em}
+    .brand-text strong{font-size:.88rem;font-weight:600;letter-spacing:.115em}.brand-text span{font-size:.63rem;letter-spacing:.22em;color:var(--gold-light)}
+    .main-nav{display:flex;align-items:center;gap:clamp(14px,1.7vw,27px)}
+    .main-nav>a:not(.nav-cta){font-size:.78rem;color:#E2E8E9;transition:color .2s}
+    .main-nav>a:not(.nav-cta):hover{color:var(--gold-light)}
+    .main-nav .nav-cta{border:1px solid var(--gold);color:var(--gold-light);padding:12px 15px;font-size:.77rem;font-weight:700;white-space:nowrap}
+    .main-nav .nav-cta:hover{background:var(--gold);color:var(--navy)}
+    .mobile-toggle{display:none;border:1px solid #ffffff42;background:transparent;color:white;width:45px;height:45px;align-items:center;justify-content:center;cursor:pointer}
+    .mobile-toggle svg{height:23px;width:23px}
+    .hero {background:var(--navy);color:var(--white);position:relative;overflow:hidden}
+    .hero::before {content:'';position:absolute;inset:0;background:radial-gradient(circle at 76% 20%,#41566460,transparent 39%),linear-gradient(120deg,transparent 25%,#0d1e2826);pointer-events:none}
+    .hero-inner{display:grid;grid-template-columns:1.05fr .95fr;gap:35px;align-items:center;min-height:630px;padding-top:76px;padding-bottom:87px;position:relative}
+    .hero-copy{padding-bottom:22px;z-index:2}.hero-kicker{display:flex;align-items:center;gap:15px;color:var(--gold-light);margin-bottom:28px}
+    .hero-kicker::before{content:'';width:35px;height:1px;background:var(--gold)}
+    .hero h1{font-family:var(--serif);font-size:clamp(3.1rem,5.6vw,6.1rem);letter-spacing:-.055em;font-weight:400;line-height:1.06;margin:0 0 30px;max-width:750px}
+    .hero h1 em{color:var(--gold-light);font-style:italic;font-weight:400}
+    .hero-desc{font-size:clamp(1rem,1.3vw,1.13rem);max-width:560px;color:#C8D1D4;line-height:1.82;margin-bottom:35px}
+    .hero-actions {display:flex;flex-wrap:wrap;gap:13px}
+    .hero-visual{height:495px;position:relative;isolation:isolate;display:flex;align-items:center;justify-content:center}
+    .architectural {width:100%;height:100%;position:absolute;inset:0;z-index:-1;opacity:.9}
+    .hero-frame{width:68%;min-width:250px;aspect-ratio:0.78;border:1px solid #B59A6777;position:relative;display:flex;flex-direction:column;justify-content:space-between;align-items:center;padding:40px 20px 36px;transform:translate(12px,11px);background:linear-gradient(155deg,#29424C99,#11253099);box-shadow:0 40px 100px #00000044}
+    .hero-frame::before,.hero-frame::after{content:'';position:absolute;width:72%;height:1px;background:#B59A674A;left:14%}
+    .hero-frame::before{top:18px}.hero-frame::after{bottom:18px}
+    .hero-frame .frame-title{color:#D8C49D;text-align:center;letter-spacing:.29em;text-transform:uppercase;font-size:.62rem;font-weight:700}
+    .hero-frame .monogram{font-family:var(--serif);font-size:clamp(8.5rem,16vw,17rem);font-weight:400;line-height:1;color:#D2BD91;text-shadow:0 5px 30px #0003;letter-spacing:-.13em;transform:translateX(-.1em)}
+    .hero-frame .frame-bottom{text-align:center;color:#E7E6DE;letter-spacing:.18em;text-transform:uppercase;font-size:.58rem;line-height:2}
+    .hero-frame .frame-bottom::before{content:'';display:block;width:42px;height:1px;background:var(--gold);margin:0 auto 14px}
+    .hero-side{position:absolute;right:1%;top:50%;transform:translateY(-50%);writing-mode:vertical-rl;font-size:.58rem;letter-spacing:.3em;text-transform:uppercase;color:#B4C1C4}
+    .hero-bottom {position:relative;border-top:1px solid #ffffff2B}
+    .hero-bottom-inner{display:grid;grid-template-columns:repeat(3,1fr);padding:23px 0;gap:25px}
+    .hero-bottom-inner div{display:flex;align-items:center;gap:14px;color:#DEE4E4;font-size:.73rem;letter-spacing:.12em;text-transform:uppercase}
+    .hero-bottom-inner .num{font-family:var(--serif);color:var(--gold-light);font-size:.97rem}
+    .section {padding:clamp(75px,9vw,132px) 0}
+    .intro {background:var(--cream-2)}.intro-grid {display:grid;grid-template-columns:.42fr 1fr;gap:clamp(45px,8vw,140px)}
+    .intro-aside {border-top:1px solid var(--gold);padding-top:20px}
+    .intro-aside .small-serif {font-family:var(--serif);font-size:2.2rem;color:var(--navy);line-height:1.1;margin:26px 0}
+    .intro-aside p{font-size:.84rem;color:#687479;max-width:205px;line-height:1.7}
+    .intro-content .section-title{max-width:780px}
+    .intro-content .section-p {margin-bottom:32px}
+    .values {margin-top:54px;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .value{padding:26px 22px;border-right:1px solid var(--line)}.value:first-child{padding-left:0}.value:last-child{border-right:0}
+    .value strong{display:block;font-size:.83rem;color:var(--navy);margin-bottom:7px}.value span{display:block;color:#727A7D;font-size:.8rem;line-height:1.55}
+    .areas {background:var(--cream)}
+    .section-heading{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:47px}
+    .section-heading .section-title{max-width:670px;margin-bottom:0}.section-heading .section-p{max-width:350px;margin:0}
+    .areas-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+    .area-card{position:relative;display:flex;flex-direction:column;min-height:350px;background:#fff;padding:38px 33px;border:1px solid #E6E1D9;transition:transform .2s ease,box-shadow .2s ease}
+    .area-card:hover{transform:translateY(-4px);box-shadow:0 14px 40px #152B3710}
+    .area-card.primary{background:var(--navy);color:white;border-color:var(--navy)}
+    .area-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
+    .area-head svg{height:45px;width:45px;stroke:var(--gold);stroke-width:1.25;fill:none}.area-no{font-family:var(--serif);font-size:.9rem;color:#A79A83}
+    .area-card h3{font:400 clamp(1.65rem,2.1vw,2.15rem)/1.15 var(--serif);letter-spacing:-.02em;margin:44px 0 13px}
+    .area-card p{color:#697176;font-size:.89rem;line-height:1.75;margin:0 0 23px}
+    .area-card.primary p{color:#BCC7CC}.area-card .text-link{margin-top:auto;width:max-content}.area-card.primary .text-link{color:var(--gold-light)}
+    .labor {background:var(--navy-2);color:white;position:relative;overflow:hidden}
+    .labor::before{content:'L';position:absolute;right:-.02em;top:0;font:400 52rem/.82 var(--serif);opacity:.025;pointer-events:none}
+    .labor-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(55px,8vw,140px);position:relative}
+    .labor .section-title{max-width:510px}.labor .section-p{color:#BEC9CD;max-width:490px;margin-bottom:34px}
+    .labor-right{display:flex;flex-direction:column;gap:13px;justify-content:center}
+    .labor-row{display:grid;grid-template-columns:55px 1fr;gap:20px;padding:27px 28px;background:#FFFFFF0A;border:1px solid #FFFFFF24}
+    .labor-row .n{font:italic 1.5rem/1 var(--serif);color:var(--gold-light)}
+    .labor-row strong{display:block;color:#F1F4F4;font-size:.99rem;margin:0 0 7px;font-weight:600}
+    .labor-row p{font-size:.87rem;line-height:1.7;color:#BBC8CA;margin:0}
+    .dual {background:var(--cream-2)}
+    .dual-heading{max-width:820px;margin-bottom:46px}
+    .dual-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .dual-card{min-height:340px;background:white;border:1px solid var(--line);padding:40px;display:flex;flex-direction:column;align-items:flex-start}
+    .dual-card .tag{font-size:.68rem;letter-spacing:.17em;font-weight:700;text-transform:uppercase;color:#8B7958}
+    .dual-card h3{font:400 clamp(1.9rem,2.75vw,2.65rem)/1.13 var(--serif);margin:36px 0 18px;color:var(--navy)}
+    .dual-card p{color:#697377;font-size:.92rem;line-height:1.77;max-width:460px}
+    .dual-card .text-link{margin-top:auto}
+    .realestate {background:#DCE4E5;padding:clamp(70px,7vw,108px) 0}
+    .realestate-inner{display:grid;grid-template-columns:1fr .8fr;gap:60px;align-items:center}
+    .realestate .section-title{max-width:640px}.realestate .section-p{color:#506068}
+    .realestate-aside {border:1px solid #A8B6BA;padding:38px;background:#EDF0EE70;position:relative}
+    .realestate-aside::before{content:'';position:absolute;top:-1px;left:-1px;width:75px;height:4px;background:var(--gold)}
+    .realestate-aside .mini{font-family:var(--serif);font-size:2rem;color:var(--navy);line-height:1.16;margin:10px 0 20px}
+    .realestate-aside p{font-size:.88rem;line-height:1.7;color:#617279}
+    .realestate-aside .btn{margin-top:14px}
+    .faq {background:var(--cream-2);padding:85px 0}
+    .faq-layout{display:grid;grid-template-columns:.75fr 1.25fr;gap:80px}
+    .faq .section-title{font-size:clamp(2.2rem,3.4vw,3.5rem)}
+    .faq-list{border-top:1px solid var(--line)}
+    details{border-bottom:1px solid var(--line)}
+    summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:23px 0;font-weight:600;font-size:.94rem;color:var(--navy)}
+    summary::-webkit-details-marker{display:none}
+    summary::after{content:'+';font:300 1.6rem/1 var(--sans);color:#9B8252}
+    details[open] summary::after{content:'−'}
+    details p{margin:0 0 24px;color:#647076;font-size:.9rem;line-height:1.75;max-width:670px}
+    .contact{background:var(--cream);padding:clamp(75px,8vw,115px) 0}
+    .contact-main{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(45px,7vw,105px)}
+    .contact .section-title{max-width:500px}
+    .contact-item{display:flex;gap:15px;align-items:flex-start;padding:19px 0;border-bottom:1px solid #D8D0C4}
+    .contact-item .icon{width:31px;flex-shrink:0;color:#9D7F4A}.contact-item .icon svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.5}
+    .contact-item small{display:block;color:#798083;text-transform:uppercase;letter-spacing:.16em;font-size:.67rem;font-weight:700;margin-bottom:2px}
+    .contact-item a:not(.mini-link),.contact-item span{font-weight:600;color:var(--navy)}.contact-item a:hover{text-decoration:underline;text-decoration-color:var(--gold)}
+    .address-title{margin-top:38px;font-size:.7rem;text-transform:uppercase;letter-spacing:.17em;color:#7B6E57;font-weight:700}
+    .address-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:20px}
+    .address{border-left:2px solid var(--gold);padding-left:15px}.address strong{font-size:.85rem;color:var(--navy)}.address p{font-size:.8rem;color:#616C70;line-height:1.65;margin:5px 0}
+    .mini-link{font-size:.76rem;color:#526879;text-decoration:underline;text-underline-offset:3px}
+    .form-card {background:white;border:1px solid #E1DCCF;padding:clamp(27px,3.2vw,49px);box-shadow:0 20px 60px #22323B0A}
+    .form-card h3{font:400 2.25rem/1.2 var(--serif);color:var(--navy);margin:0 0 10px}
+    .form-card .form-intro{font-size:.88rem;color:#6A7478;line-height:1.75;margin-bottom:25px}
+    .field-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;margin-bottom:18px}
+    .field label{font-size:.74rem;font-weight:700;color:#45535B;margin-bottom:7px}
+    .field input,.field textarea,.field select{background:#F8F7F3;border:1px solid #DADFD9;border-radius:1px;padding:13px 14px;width:100%;font-size:.89rem;color:var(--navy);outline-offset:2px;transition:border-color .2s}
+    .field input:focus,.field textarea:focus,.field select:focus{border-color:var(--gold)}
+    .field textarea{resize:vertical;min-height:105px}
+    .checkline{display:flex;gap:12px;align-items:start;margin:10px 0 23px;font-size:.76rem;line-height:1.6;color:#657075}
+    .checkline input{width:16px;height:16px;margin-top:2px;accent-color:var(--navy);flex-shrink:0}
+    .form-btn{width:100%}.form-note{font-size:.73rem;line-height:1.7;color:#778186;margin:16px 0 0}
+    .footer{background:var(--navy-2);color:white;padding:57px 0 27px}
+    .footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:42px;padding-bottom:48px}
+    .footer .brand{margin-bottom:23px}.footer-desc{font-size:.83rem;color:#AFBDC1;max-width:450px;line-height:1.8}
+    .footer h4{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--gold-light);margin:0 0 23px}
+    .footer-menu{display:flex;flex-direction:column;gap:13px;font-size:.82rem;color:#C1CCD0}.footer-menu a:hover{color:var(--gold-light)}
+    .footer-bottom{border-top:1px solid #FFFFFF22;padding-top:21px;display:flex;justify-content:space-between;gap:25px;align-items:center;color:#A7B4B8;font-size:.73rem;line-height:1.6}
+    .footer-bottom a{text-decoration:underline;text-underline-offset:3px}
+    .floating-wa {display:flex;align-items:center;justify-content:center;position:fixed;right:25px;bottom:25px;width:57px;height:57px;background:#1F7758;border:2px solid white;color:white;border-radius:50%;z-index:60;box-shadow:0 7px 27px #061A1A4D;transition:transform .2s}
+    .floating-wa:hover{transform:translateY(-4px)}.floating-wa svg{width:28px;height:28px;fill:currentColor}
+    .disclosure{background:#ECF0EF;border-top:1px solid #DCE3E1;padding:22px 0;color:#59666B;font-size:.76rem;line-height:1.7}
+    @media(max-width:1100px){.main-nav{gap:13px}.main-nav>a:not(.nav-cta){font-size:.73rem}.brand-text strong{font-size:.79rem}}
+    @media(max-width:940px){
+      .site-header-inner{min-height:77px}.mobile-toggle{display:flex}.main-nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:20px var(--side) 27px;border-top:1px solid #ffffff33;box-shadow:0 20px 25px #07131B55;align-items:stretch;flex-direction:column;gap:0}
+      .main-nav.is-open{display:flex}.main-nav>a:not(.nav-cta){font-size:.93rem;border-bottom:1px solid #ffffff1c;padding:13px 0}.main-nav .nav-cta{text-align:center;margin-top:18px}
+      .hero-inner{grid-template-columns:1fr;min-height:unset;padding-top:70px;padding-bottom:40px;gap:0}
+      .hero-copy{padding-bottom:0}.hero h1{max-width:760px}.hero-visual{height:390px;margin-top:30px}.hero-frame{width:240px;min-width:0;height:310px;transform:translate(0,0)}
+      .hero-frame .monogram{font-size:10rem}.hero-side{right:16%}
+      .intro-grid{grid-template-columns:1fr;gap:30px}.intro-aside{display:flex;align-items:flex-start;justify-content:space-between;gap:30px}.intro-aside .small-serif{margin:0;font-size:1.5rem}.intro-aside p{margin:0}
+      .labor-layout,.contact-main,.realestate-inner{gap:55px}.faq-layout{gap:45px}
+    }
+    @media(max-width:750px){
+      .topline .right{display:none}.topline small{font-size:.59rem}.hero-bottom-inner{gap:8px}.hero-bottom-inner div{font-size:.65rem;gap:8px}
+      .section-heading{display:block}.section-heading .section-p{margin-top:19px}
+      .areas-grid{grid-template-columns:1fr}.area-card{min-height:280px}.area-card h3{margin-top:26px}
+      .labor-layout,.realestate-inner,.contact-main,.faq-layout{grid-template-columns:1fr}
+      .dual-grid,.footer-top{grid-template-columns:1fr 1fr}.footer-top>div:first-child{grid-column:1/-1}
+      .faq-layout{gap:15px}.section-title{font-size:clamp(2.4rem,8vw,3.7rem)}
+    }
+    @media(max-width:530px){
+      .topline{height:29px}.topline small{font-size:.54rem;letter-spacing:.13em}
+      .site-header-inner{min-height:70px}.brand-mark{width:38px;height:44px;font-size:30px}.brand-text strong{font-size:.7rem;letter-spacing:.06em}.brand-text span{font-size:.55rem}
+      .hero-inner{padding-top:57px}.hero h1{font-size:clamp(2.85rem,11vw,4.3rem)}.hero-kicker{font-size:.6rem;margin-bottom:22px}.hero-desc{font-size:.97rem}
+      .hero-actions{display:grid;grid-template-columns:1fr}.hero-visual{height:310px}.hero-frame{width:205px;height:264px;padding:26px 15px}.hero-frame .monogram{font-size:8rem}.hero-side{right:4%}
+      .hero-bottom-inner{grid-template-columns:1fr;gap:0;padding:10px 0}.hero-bottom-inner div{padding:9px 0;font-size:.67rem}
+      .section {padding:70px 0}.intro-aside{display:block}.intro-aside .small-serif{font-size:1.65rem;margin-bottom:8px}.values{grid-template-columns:1fr}.value,.value:first-child{padding:17px 0;border-right:0;border-bottom:1px solid var(--line)}.value:last-child{border-bottom:0}
+      .area-card{padding:28px}.labor-row{padding:22px 18px;grid-template-columns:35px 1fr;gap:12px}
+      .dual-grid,.footer-top{grid-template-columns:1fr}.footer-top>div:first-child{grid-column:1}.dual-card{min-height:295px;padding:30px}.realestate-aside{padding:28px}
+      .contact-main{gap:43px}.field-row,.address-grid{grid-template-columns:1fr;gap:0}.address{margin-bottom:18px}.form-card h3{font-size:1.95rem}.footer-bottom{display:block}.footer-bottom p:first-child{margin-bottom:9px}
+      .floating-wa{right:17px;bottom:17px;width:51px;height:51px}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LegalService",
+    "name":"Estudio Jurídico Ternavacio y Asociados",
+    "description":"Somos especialistas en Derecho Laboral y contamos con vasta experiencia en Derecho Sucesorio, Empresarial y Societario.",
+    "telephone":"+54 9 3491 697518",
+    "email":"lisandroter@gmail.com",
+    "address":[
+      {"@type":"PostalAddress","streetAddress":"Echagüe 24","addressLocality":"Ceres","addressRegion":"Santa Fe","addressCountry":"AR"},
+      {"@type":"PostalAddress","streetAddress":"Pedro Vittori 3536","addressLocality":"Santa Fe","addressRegion":"Santa Fe","addressCountry":"AR"}
+    ],
+    "areaServed":[{"@type":"Place","name":"Ceres, Santa Fe"},{"@type":"Place","name":"Santa Fe, Santa Fe"}],
+    "sameAs":["https://www.instagram.com/lisandroter/"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Ir al contenido principal</a>
+  <div class="topline" aria-hidden="true"><div class="container"><small>Estudio Jurídico Ternavacio y Asociados</small><small class="right">Ceres · Santa Fe</small></div></div>
+  <header class="site-header" id="inicio">
+    <div class="container site-header-inner">
+      <a class="brand" href="#inicio" aria-label="Estudio Jurídico Ternavacio y Asociados, ir al inicio">
+        <span class="brand-mark" aria-hidden="true">T</span>
+        <span class="brand-text"><strong>Ternavacio</strong><span>&amp; Asociados · Estudio Jurídico</span></span>
+      </a>
+      <button class="mobile-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav" id="menu-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <a href="#estudio">El estudio</a><a href="#areas">Áreas jurídicas</a><a href="#laboral">Derecho Laboral</a><a href="#inmobiliaria">Inmobiliaria</a><a href="#contacto">Contacto</a>
+        <a class="nav-cta" href="https://wa.me/5493491697518?text=Buen%20d%C3%ADa.%20Quisiera%20realizar%20una%20consulta%20jur%C3%ADdica." target="_blank" rel="noopener noreferrer">Solicitar consulta ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow hero-kicker">Especialistas en Derecho Laboral</div>
+          <h1 id="hero-title">Somos especialistas en <em>Derecho Laboral.</em></h1>
+          <p class="hero-desc">Somos especialistas en Derecho Laboral y contamos con vasta experiencia en Derecho Sucesorio, Empresarial y Societario.</p>
+          <div class="hero-actions">
+            <a class="btn gold" href="https://wa.me/5493491697518?text=Buen%20d%C3%ADa.%20Quisiera%20solicitar%20una%20consulta%20jur%C3%ADdica." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16m-7-7 7 7-7 7"/></svg></a>
+            <a class="btn outline-light" href="#estudio">Conocer el estudio <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <svg class="architectural" viewBox="0 0 560 520" preserveAspectRatio="xMidYMid meet" fill="none" stroke="#B59A67" stroke-width="1"><path opacity=".23" d="M70 448V94h420v354M105 448V124h350v324M140 448V154h280v294M177 448V183h206v265"/><path opacity=".16" d="M40 448h480M40 467h480M40 486h480M42 74h478M42 55h478"/><path opacity=".15" d="M277 28v468M0 265h560"/></svg>
+          <div class="hero-frame"><div class="frame-title">Estudio Jurídico</div><div class="monogram">T</div><div class="frame-bottom">Ceres · Santa Fe<br>Argentina</div></div>
+          <div class="hero-side">Asesoramiento · Patrocinio · Litigación</div>
+        </div>
+      </div>
+      <div class="hero-bottom"><div class="container hero-bottom-inner"><div><span class="num">01</span> Derecho Laboral</div><div><span class="num">02</span> Derecho Sucesorio</div><div><span class="num">03</span> Societario y Empresas</div></div></div>
+    </section>
+
+    <section class="intro section" id="estudio" aria-labelledby="estudio-title">
+      <div class="container intro-grid">
+        <aside class="intro-aside"><div class="eyebrow"><span class="section-number">01 /</span> Nuestro estudio</div><div><p class="small-serif">La atención jurídica comienza por comprender el caso.</p><p>Asesoramiento a particulares y empresas en la provincia de Santa Fe.</p></div></aside>
+        <div class="intro-content">
+          <h2 class="section-title" id="estudio-title">Análisis jurídico, actuación profesional y <em>enfoque estratégico.</em></h2>
+          <p class="section-p">El Estudio Jurídico Ternavacio y Asociados, a través del Dr. Lisandro Omar Ternavacio, desarrolla tareas de asesoramiento, patrocinio y representación judicial. Somos especialistas en Derecho Laboral y contamos con vasta experiencia en Derecho Sucesorio, Empresarial y Societario.</p>
+          <a class="text-link" href="#contacto">Contactar al estudio <span aria-hidden="true">↗</span></a>
+          <div class="values">
+            <div class="value"><strong>Análisis individualizado</strong><span>Evaluación de los antecedentes y circunstancias de cada consulta.</span></div>
+            <div class="value"><strong>Claridad en el asesoramiento</strong><span>Explicación comprensible de las alternativas jurídicas disponibles.</span></div>
+            <div class="value"><strong>Actuación profesional</strong><span>Asesoramiento y patrocinio conforme a las particularidades del asunto.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="areas section" id="areas" aria-labelledby="areas-title">
+      <div class="container">
+        <div class="section-heading"><div><div class="eyebrow"><span class="section-number">02 /</span> Áreas de actuación</div><h2 class="section-title" id="areas-title">Asistencia jurídica en <em>materias clave.</em></h2></div><p class="section-p">Especialistas en Derecho Laboral, con vasta experiencia en Derecho Sucesorio, Empresarial y Societario.</p></div>
+        <div class="areas-grid">
+          <article class="area-card primary"><div class="area-head"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 13h36M12 13V6h24v7M9 13v28h30V13M18 23h12M24 17v20"/></svg><span class="area-no">01</span></div><h3>Derecho<br>Laboral</h3><p>Asesoramiento, patrocinio y litigación en conflictos derivados de relaciones de trabajo.</p><a class="text-link" href="#laboral">Conocer el área <span aria-hidden="true">↗</span></a></article>
+          <article class="area-card"><div class="area-head"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M5 41h38M9 41V19l15-12 15 12v22M17 41V27h14v14M14 16h20"/></svg><span class="area-no">02</span></div><h3>Derecho<br>Sucesorio</h3><p>Intervención letrada en procesos sucesorios y asuntos vinculados al patrimonio hereditario.</p><a class="text-link" href="#otras-areas">Conocer el área <span aria-hidden="true">↗</span></a></article>
+          <article class="area-card"><div class="area-head"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M5 42h38M11 42V15h12v27M23 42V7h14v35M15 21h4M15 27h4M15 33h4M28 15h4M28 23h4M28 31h4"/></svg><span class="area-no">03</span></div><h3>Societario<br>y Empresas</h3><p>Asesoramiento en cuestiones societarias y asistencia jurídica con orientación empresarial.</p><a class="text-link" href="#otras-areas">Conocer el área <span aria-hidden="true">↗</span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="labor section" id="laboral" aria-labelledby="labor-title">
+      <div class="container labor-layout">
+        <div><div class="eyebrow gold"><span class="section-number">03 /</span> Área principal</div><h2 class="section-title" id="labor-title">Derecho Laboral.<br><em>Asesoramiento y litigación.</em></h2><p class="section-p">Atención de consultas relativas a derechos y obligaciones provenientes de la relación de trabajo, con análisis de antecedentes, documentación y posibles vías de actuación.</p><a class="btn gold" href="https://wa.me/5493491697518?text=Buen%20d%C3%ADa.%20Quisiera%20consultar%20por%20un%20asunto%20de%20Derecho%20Laboral." target="_blank" rel="noopener noreferrer">Realizar consulta laboral <span aria-hidden="true">↗</span></a></div>
+        <div class="labor-right">
+          <div class="labor-row"><span class="n">01</span><div><strong>Asesoramiento laboral</strong><p>Evaluación jurídica de situaciones surgidas en el marco de relaciones de trabajo.</p></div></div>
+          <div class="labor-row"><span class="n">02</span><div><strong>Patrocinio y representación judicial</strong><p>Intervención profesional en procesos judiciales de naturaleza laboral.</p></div></div>
+          <div class="labor-row"><span class="n">03</span><div><strong>Trabajadores y empleadores</strong><p>Consultas sobre derechos, obligaciones y conflictos laborales, de acuerdo con la posición e intereses de cada parte.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dual section" id="otras-areas" aria-labelledby="otras-title">
+      <div class="container"><div class="dual-heading"><div class="eyebrow"><span class="section-number">04 /</span> Otras materias de actuación</div><h2 class="section-title" id="otras-title">Patrimonio, sucesiones y <em>actividad empresaria.</em></h2><p class="section-p">Asistencia letrada en asuntos sucesorios y societarios, conforme a los antecedentes y las necesidades jurídicas del caso.</p></div>
+      <div class="dual-grid"><article class="dual-card"><span class="tag">Derecho Sucesorio</span><h3>Asuntos hereditarios y patrimoniales.</h3><p>Intervención en procesos sucesorios y cuestiones vinculadas con el patrimonio hereditario.</p><a class="text-link" href="https://wa.me/5493491697518?text=Buen%20d%C3%ADa.%20Quisiera%20consultar%20por%20un%20asunto%20sucesorio." target="_blank" rel="noopener noreferrer">Consultar sobre sucesiones <span aria-hidden="true">↗</span></a></article>
+      <article class="dual-card"><span class="tag">Societario y Empresas</span><h3>Asesoramiento jurídico empresarial.</h3><p>Asistencia en cuestiones de Derecho Societario y asuntos jurídicos vinculados con la actividad empresarial.</p><a class="text-link" href="https://wa.me/5493491697518?text=Buen%20d%C3%ADa.%20Quisiera%20consultar%20por%20un%20asunto%20societario%20o%20empresarial." target="_blank" rel="noopener noreferrer">Consultar por empresas <span aria-hidden="true">↗</span></a></article></div></div>
+    </section>
+
+    <section class="realestate" id="inmobiliaria" aria-labelledby="realestate-title"><div class="container realestate-inner"><div><div class="eyebrow"><span class="section-number">05 /</span> Actividad diferenciada</div><h2 class="section-title" id="realestate-title">Un espacio para la <em>actividad inmobiliaria.</em></h2><p class="section-p">El estudio desarrolla también actividad vinculada al sector inmobiliario. Las consultas de este ámbito se reciben de manera diferenciada de las consultas jurídicas.</p></div><div class="realestate-aside"><div class="eyebrow" style="color:#8B7859">Consultas inmobiliarias</div><p class="mini">Un contacto directo para conocer la disponibilidad de atención.</p><p>El detalle de servicios, operaciones y condiciones se incorporará luego de su confirmación.</p><a class="btn outline-dark" href="https://wa.me/5493491697518?text=Buen%20d%C3%ADa.%20Quisiera%20realizar%20una%20consulta%20inmobiliaria." target="_blank" rel="noopener noreferrer">Consulta inmobiliaria <span aria-hidden="true">↗</span></a></div></div></section>
+
+    <section class="faq" id="preguntas" aria-labelledby="faq-title"><div class="container faq-layout"><div><div class="eyebrow"><span class="section-number">06 /</span> Información útil</div><h2 class="section-title" id="faq-title">Antes de <em>consultar.</em></h2></div><div class="faq-list">
+      <details><summary>¿Cómo puedo realizar una consulta?</summary><p>Podés comunicarte por WhatsApp, correo electrónico o mediante el formulario de esta página. Se coordinará la modalidad de atención según la disponibilidad del estudio.</p></details>
+      <details><summary>¿Puedo consultar por un asunto laboral, sucesorio o societario?</summary><p>Sí. Son materias de actuación profesional informadas por el estudio. La posibilidad de intervención en un asunto concreto se evalúa a partir de sus antecedentes.</p></details>
+      <details><summary>¿La consulta inmobiliaria se atiende por el mismo número?</summary><p>Sí. El canal de WhatsApp es común, pero los enlaces del sitio identifican expresamente si se trata de una consulta jurídica o inmobiliaria.</p></details>
+      <details><summary>¿El envío de un mensaje implica aceptación del caso?</summary><p>No. El contacto inicial no constituye por sí solo aceptación de patrocinio o representación profesional. Se requiere una evaluación y el acuerdo correspondiente.</p></details>
+    </div></div></section>
+
+    <section class="contact" id="contacto" aria-labelledby="contact-title"><div class="container contact-main">
+      <div><div class="eyebrow"><span class="section-number">07 /</span> Contacto</div><h2 class="section-title" id="contact-title">Conversemos sobre <em>tu consulta.</em></h2><p class="section-p">Podés comunicarte con el estudio a través de los siguientes medios. Indicá brevemente la materia de tu consulta para facilitar su derivación.</p>
+        <div class="contact-item"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3H5a2 2 0 0 0-2 2c0 9 7 16 16 16a2 2 0 0 0 2-2v-2l-5-2-2 2a13 13 0 0 1-7-7l2-2-2-5Z"/></svg></span><div><small>WhatsApp y teléfono</small><a href="https://wa.me/5493491697518" target="_blank" rel="noopener noreferrer">3491 697518</a></div></div>
+        <div class="contact-item"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="1"/><path d="m2 6 10 8 10-8"/></svg></span><div><small>Correo electrónico</small><a href="mailto:lisandroter@gmail.com">lisandroter@gmail.com</a></div></div>
+        <div class="contact-item"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".7" fill="currentColor"/></svg></span><div><small>Instagram</small><a href="https://www.instagram.com/lisandroter/" target="_blank" rel="noopener noreferrer">@lisandroter</a></div></div>
+        <div class="address-title">Direcciones de contacto</div><div class="address-grid"><div class="address"><strong>Ceres</strong><p>Echagüe 24<br>Ceres, Santa Fe</p><a class="mini-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=Echag%C3%BCe%2024%2C%20Ceres%2C%20Santa%20Fe%2C%20Argentina">Ver ubicación ↗</a></div><div class="address"><strong>Santa Fe capital</strong><p>Pedro Vittori 3536<br>Santa Fe, Santa Fe</p><a class="mini-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=Pedro%20Vittori%203536%2C%20Santa%20Fe%2C%20Argentina">Ver ubicación ↗</a></div></div>
+      </div>
+      <div class="form-card"><h3>Enviar una consulta</h3><p class="form-intro">Completá estos datos para preparar un mensaje de WhatsApp. El sitio no almacena la información.</p>
+        <form id="contact-form"><div class="field-row"><div class="field"><label for="nombre">Nombre *</label><input id="nombre" name="nombre" type="text" maxlength="80" autocomplete="name" placeholder="Tu nombre" required></div><div class="field"><label for="tipo">Tipo de consulta *</label><select id="tipo" name="tipo" required><option value="" selected disabled>Seleccionar materia</option><option>Derecho Laboral</option><option>Derecho Sucesorio</option><option>Derecho Societario / Empresas</option><option>Actividad inmobiliaria</option><option>Otra consulta jurídica</option></select></div></div>
+          <div class="field"><label for="mensaje">Motivo de contacto *</label><textarea id="mensaje" name="mensaje" maxlength="650" placeholder="Describí brevemente el motivo, sin incluir datos sensibles ni documentación confidencial." required></textarea></div>
+          <label class="checkline"><input type="checkbox" id="consent" required><span>Comprendo que se abrirá WhatsApp para revisar y enviar el mensaje. El contacto inicial no implica aceptación del caso ni contratación profesional.</span></label>
+          <button class="btn gold form-btn" type="submit">Preparar mensaje en WhatsApp <span aria-hidden="true">↗</span></button>
+          <p class="form-note" id="form-note" role="status">* Campos obligatorios. El mensaje se enviará únicamente si lo confirmás dentro de WhatsApp. También podés escribir a <a href="mailto:lisandroter@gmail.com" style="text-decoration:underline">lisandroter@gmail.com</a>.</p>
+        </form>
+      </div>
+    </div></section>
+  </main>
+  <div class="disclosure"><div class="container">El contenido de esta página es informativo e institucional. No constituye asesoramiento jurídico individualizado ni implica compromiso sobre el resultado de procedimientos o gestiones.</div></div>
+  <footer class="footer"><div class="container"><div class="footer-top"><div><a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true">T</span><span class="brand-text"><strong>Ternavacio</strong><span>&amp; Asociados · Estudio Jurídico</span></span></a><p class="footer-desc">Somos especialistas en Derecho Laboral y contamos con vasta experiencia en Derecho Sucesorio, Empresarial y Societario.</p></div>
+    <div><h4>Navegación</h4><div class="footer-menu"><a href="#estudio">Nuestro estudio</a><a href="#areas">Áreas jurídicas</a><a href="#laboral">Derecho Laboral</a><a href="#inmobiliaria">Actividad inmobiliaria</a><a href="#contacto">Contacto</a></div></div>
+    <div><h4>Datos profesionales</h4><div class="footer-menu"><span>Dr. Lisandro Omar Ternavacio</span><span>Matrícula 5-610 · T. 1 · F. 153</span><span>Colegio de Abogados de la Quinta Circunscripción Judicial, Rafaela, Santa Fe</span><a href="mailto:lisandroter@gmail.com">lisandroter@gmail.com</a></div></div>
+  </div><div class="footer-bottom"><p>© <span id="year">2026</span> Estudio Jurídico Ternavacio y Asociados. Sitio institucional.</p><p>Ceres · Santa Fe capital · Provincia de Santa Fe</p></div></div></footer>
+  <a class="floating-wa" href="https://wa.me/5493491697518?text=Buen%20d%C3%ADa.%20Quisiera%20realizar%20una%20consulta." target="_blank" rel="noopener noreferrer" aria-label="Consultar por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.5 11.5 0 0 0 2.9 18.2L1 23l4.95-1.75A11.5 11.5 0 1 0 20.5 3.5ZM12 21a9.4 9.4 0 0 1-4.8-1.31l-.35-.2-2.94 1.04 1.07-2.85-.23-.37A9.5 9.5 0 1 1 12 21Zm5.22-6.94c-.28-.14-1.7-.84-1.96-.93-.26-.1-.45-.14-.64.14-.19.28-.73.93-.89 1.12-.16.19-.33.21-.61.07-.28-.14-1.19-.44-2.26-1.39-.84-.75-1.41-1.68-1.57-1.96-.16-.28-.02-.43.12-.57.13-.13.28-.33.42-.49.14-.16.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.55-.88-2.12-.23-.55-.46-.48-.64-.48h-.55c-.19 0-.49.07-.75.35s-.98.96-.98 2.35 1 2.73 1.14 2.92c.14.19 1.97 3.01 4.77 4.22.67.29 1.2.46 1.61.59.68.22 1.3.19 1.79.12.55-.08 1.7-.7 1.94-1.37.24-.68.24-1.26.17-1.37-.07-.12-.26-.19-.54-.33Z"/></svg></a>
+  <script>
+    (() => {
+      document.getElementById('year').textContent = new Date().getFullYear();
+      const toggle = document.getElementById('menu-toggle');
+      const nav = document.getElementById('main-nav');
+      function closeMenu() {nav.classList.remove('is-open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Abrir menú');}
+      toggle.addEventListener('click',() => {const open = nav.classList.toggle('is-open');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú');});
+      nav.querySelectorAll('a').forEach(link => link.addEventListener('click',closeMenu));
+      document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu();});
+      document.addEventListener('click',e=>{if(!nav.contains(e.target)&&!toggle.contains(e.target))closeMenu();});
+      const form = document.getElementById('contact-form');
+      form.addEventListener('submit', e=>{
+        e.preventDefault();
+        if(!form.reportValidity())return;
+        const nombre=document.getElementById('nombre').value.trim();
+        const tipo=document.getElementById('tipo').value;
+        const mensaje=document.getElementById('mensaje').value.trim();
+        if(!nombre||!tipo||!mensaje)return;
+        const texto=`Buen día. Mi nombre es ${nombre}. Quisiera realizar una consulta sobre ${tipo}.\n\nMotivo: ${mensaje}`;
+        const url='https://wa.me/5493491697518?text='+encodeURIComponent(texto);
+        const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener noreferrer';document.body.appendChild(a);a.click();a.remove();
+        const n=document.getElementById('form-note');n.textContent='Se preparó el mensaje para WhatsApp. Revisá y confirmá el envío desde esa aplicación. Si no se abre, utilizá el botón directo de WhatsApp del sitio.';
+      });
+    })();
+  </script>
+</body>
+</html>
